@@ -103,3 +103,12 @@ print(alphabet) // a...z
 print(prev24Hours) // 2026-07-08 16:22:36 +0000...2026-07-09 16:22:36 +0000
 
 // Thus, you can make a range out of anything, provided that it comforms to the Comparable protocol.
+
+// There are some 'gotchas' to be aware of. For instance, in this case, the comparable is contingent on ASCII ordering:
+
+let uppercaseRange = "A"...
+let lowercaseRange = "a"...
+print(uppercaseRange.contains("A")) // true
+print(uppercaseRange.contains("a")) // true
+print(lowercaseRange.contains("A")) // false
+print(lowercaseRange.contains("a")) // true
