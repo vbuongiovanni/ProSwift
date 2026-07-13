@@ -11,6 +11,7 @@ func square<T : Numeric>(_ value: T) -> T {
 // Note that to declare the type, you must do it like this though
 let squareInt: Int = square(10) // 100
 let squareDouble: Double = square(10.5) // 110.25
+print(square(25)) // 625
 
 // A more complex example:
 
