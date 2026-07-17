@@ -60,7 +60,7 @@ class BetterViewModel {
     
     // This defines a new subscript in the form of className.someValue
     // Note that this needs to be a generic in order to translate what the return type
-    // will be (e.g., whatever the property's type is
+    // will be (e.g., whatever the property's type is).
     subscript<T>(dynamicMember keyPath: KeyPath<User, T>) -> T {
         user[keyPath: keyPath]
     }
